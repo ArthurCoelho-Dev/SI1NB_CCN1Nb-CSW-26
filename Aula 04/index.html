@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantica</title>
 </head>
+
 <body>
     <h1>Principais formatações</h1>
-    <br>
     <h2>Negrito / Destaque</h2>
     <p>Na frase temos uma parte do texto em <b>negrito</b> usando a tag B (não semântica)</p>
     <p>Na frase temos uma parte do texto em <strong>negrito</strong> usando a tag strong (com semántica)</p>
@@ -17,8 +18,10 @@
     <p>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com semântica)</p>
 
     <h2>Texto Marcador</h2>
-    <p>Aqui vamos usar um texto com <mark style="background-color: green;">destaque de marcador de texto</mark> usando mark</p>
-    <p>Aqui vamos usar um texto com <mark style="background-color: yellow;">destaque de marcador de texto</mark> usando mark</p>
+    <p>Aqui vamos usar um texto com <mark style="background-color: green;">destaque de marcador de texto</mark> usando
+        mark</p>
+    <p>Aqui vamos usar um texto com <mark style="background-color: yellow;">destaque de marcador de texto</mark> usando
+        mark</p>
 
     <h2>Texto grande e pequeno</h2>
     <p>Estamos trabalhando aqui com um texto <big>grande</big> e um texto <small>pequeno</small> nesta frase</p>
@@ -29,11 +32,35 @@
     <h2>Texto inserido</h2>
     <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
     <p>Neste frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
-    
+
     <h2>Texto sobrescrito</h2>
     <p>vamos demostrar uma formula da equação do segundo grau ax<sup>²</sup> + bx + c = 0 usando tag sup</p>
 
     <h2>Texto subescrito</h2>
     <p>vamos demostrar o texto subescrito com a formula da agua <sub>H2O</sub></p>
+
+    <h2>Trecho de código fonte</h2>
+    <p>Neste exemplo vou demostrar um trecho de código inserido o comando <code>document.getElementById('edtCodigo')</code> que é um
+        comando java script</p>
+    <pre>
+<code>
+# Resolver equação de primeiro grau: ax + b = 0
+
+# Entrada de dados
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+
+# Verificação e cálculo
+if a == 0:
+    if b == 0:
+        print("A equação tem infinitas soluções.")
+    else:
+        print("A equação não tem solução.")
+else:
+    x = -b / a
+    print(f"A solução da equação é x = {x}")
+</code>
+</pre>
 </body>
-</html>
+
+</html>,
