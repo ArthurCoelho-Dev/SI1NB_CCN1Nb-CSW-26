@@ -1,0 +1,220 @@
+/* Reset e Variáveis para facilitar a manutenção */
+:root {
+    --bg-body: #0f172a;
+    --bg-card: #1e293b;
+    --accent: #38bdf8;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header com efeito de Glassmorphism (Transparência) */
+header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px); /* Desfoque atrás do menu */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent); /* Brilho Neon */
+}
+
+/* Seções estilizadas como "Cards flutuantes" */
+section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset básico para tirar margens chatas do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5; /* Cinza azulado bem moderno */
+    color: #1a1a1a;
+}
+
+/* Header com Efeito de Vidro (Glassmorphism) */
+header {
+    background: rgba(44, 62, 80, 0.95);
+    padding: 20px 0;
+    position: sticky; /* O menu "gruda" no topo ao rolar a página */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 400;
+    transition: 0.3s; /* Faz a mudança de cor ser suave */
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Muda para azul claro ao passar o mouse */
+}
+
+/* Cards de Conteúdo */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra suave e profunda */
+}
+
+/* Efeito na Foto de Perfil */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px; /* Bordas levemente arredondadas (estilo iPhone) */
+    border: 5px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Tabelas Estilizadas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table th {
+    background: #3498db;
+    color: white;
+    padding: 15px;
+}
+
+table td {
+    padding: 12px 15px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+/* Deixa linhas alternadas com cores diferentes (Zebra) */
+table tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+
+/* Botão de Enviar no Formulário */
+button, input[type="submit"] {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+
+/* Container da Caixa de Áudio */
+.audio-card {
+    background: #f8fafc; /* Um cinza quase branco para destacar do fundo */
+    border-left: 5px solid #3498db; /* Barra lateral azul (destaque do seu tema) */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+/* Alinhamento do ícone e textos */
+.audio-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.audio-info .icon {
+    font-size: 2rem;
+    background: #e1f5fe;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.audio-info strong {
+    display: block;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.audio-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Estilizando o player de áudio (tamanho total) */
+audio {
+    width: 60%;
+    height: 40px;
+    outline: none;
+}
+
+/* Dica extra: Deixar o player combinando com o tema (apenas em navegadores modernos) */
+audio::-webkit-media-controls-enclosure {
+    background-color: #f1f4f8;
+}
