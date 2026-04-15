@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
     <form>
-<label for="nome">Nome</label>
-<input type="text" id="nome" name="nome">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
 
-<label for="email">Email pessoal</label>
-<input type="email" id="email" name="email">
+        <label for="email">Email pessoal</label>
+        <input type="email" id="email" name="email">
 
-<label for="Senha">Senha</label>
-<input type="password" id="Senha" name="Senha">
+        <label for="Senha">Senha</label>
+        <input type="password" id="Senha" name="Senha">
 
-<label for="Idade">Idade</label>
-<input type="text" id="Idade" name="Idade">
+        <label for="Idade">Idade</label>
+        <input type="text" id="Idade" name="Idade">
 
-<label for="Comentario">Deixe um comentário</label><br>
-<textarea name="Comentario" cols="50" rows="10" placeholder="Escreva aqui um comentário"></textarea>
+        <label for="Comentario">Deixe um comentário</label><br>
+        <textarea name="Comentario" cols="50" rows="10" placeholder="Escreva aqui um comentário"></textarea>
+        <br>
 
+        <label for="interesse">Material de Interesse:</label>
+        <br>
+        <input type="checkbox" id="Backend" name="Backend"> Backend
+        <input type="checkbox" id="Frontend" name="Frontend"> FrontEnd
+        <input type="checkbox" id="Fullstack" name="Fullstack">FullStack
+        <br>
+        <label for="Tipo de Viagem">Tipo de Viagem</label>
+        <br>
+        <input type="radio" id="Negocios" name="Negocios"> Negócios
+        <input type="radio" id="Lazer" name="Lazer"> Lazer
+        <input type="radio" id="Turismo" name="Turismo"> Turismo
+        <input type="radio" id="Academico" name="Academico"> Acadêmico
 
-<label for="interesse">Material de Interesse:</label>
-<br>
-<input type="checkbox" id="Backend" name="Backend"> Backend
-<input type="checkbox" id="Backend" name="Backend"> FrontEnd
-<input type="checkbox" id="Backend" name="Backend">FullStack
+        <label for="Esporte Favorito">Esporte Favorito</label>
+        <select name="Esporte" id="Esporte" size="4" multiple>
+            <option value="Selecione">Selecione</option>
+            <option value="Futebol">Futebol</option>
+            <option value="Basquete">Basquete</option>
+            <option value="Volei">Vôlei</option>
+            <option value="Tenis">Tênis</option>
+        </select>
 
+ <label for="Investimentos">Investimentos</label>
+        <select name="Investimentos" id="Investimentos" size="1">
+            <option value="Poupanca">Poupança</option>
+            <option value="CDB">CDB</option>
+            <option value="Tesouro Direto">Tesouro Direto</option>
+            <option value="Fundos Imobiliarios">Fundos Imob.</option>
+            <option value="CDI">CDI</option>
+        </select>
 
+<label for="Cor">Escolha um cor</label>
+<input type="color" name="Cor" id="Cor">
+
+<label for="file">Selecione o arquivo</label>
+<input type="file" name="file" id="file">
+
+<label for="data">Data e Hora envio:</label>
+<input type="datetime-local" name="data" id="data">
 
 
     </form>
 </body>
+
 </html>
