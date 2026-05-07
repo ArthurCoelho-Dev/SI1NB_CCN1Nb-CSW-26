@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+body { 
+    background-color: #13e6f5;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;      
+    align-items: center;
+}
+
+.texto {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.texto h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    color: #444;
+    line-height: 1.6;
+    text-align: center;
+    font-size: large;
+}
+
+.ss {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 25px;
+    width: fit-content;
+    justify-content: center;
+}
+
+.ss a {
+    text-decoration: none;
+    color: #5c677d;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.ss a:hover {
+    color: #1DB954;
+    transform: scale(1.1);
+}
+
+.ss a:active {
+    color: #ff0000;
+}
+
+
+.ss a::before {
+    content: "♬ ";
+    opacity: 0.7;
+}
+
+.ss a::after {
+    content: " ♬";
+    opacity: 0.7;
+}
