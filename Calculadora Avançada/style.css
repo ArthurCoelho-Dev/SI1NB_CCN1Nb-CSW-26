@@ -1,0 +1,100 @@
+/* 1. CONFIGURAÇÃO GERAL DA PÁGINA */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#calculadora {
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+#calculadora {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('orange.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+label, span {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#calcular {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#calcular:hover {
+    background-color: #0056b3;
+}
+
+#calcular:active {
+    transform: scale(0.98);
+}
+
+
+#resultado {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 6px;
+}
